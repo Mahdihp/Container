@@ -9,12 +9,14 @@ public class Box<T extends Number> {
 
     }
 
-    public void add(T t){
+    public void add(T t) {
         element.add(t);
     }
-    public T get(Integer t){
+
+    public T get(int t) {
         return element.get(t);
     }
+
     public List<T> getElement() {
         return element;
     }
@@ -22,4 +24,14 @@ public class Box<T extends Number> {
     public void setElement(List<T> element) {
         this.element = element;
     }
+
+    public int contains(T f) {
+        for (int i = 0; i < element.size(); i++) {
+            if (element.get(i).equals(f))
+                return i;
+        }
+        return -1;
+    }
+
+
 }
