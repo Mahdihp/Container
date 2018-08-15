@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Box<Integer> box=new Box<Integer>();
+        Box<Integer> box=new Box<>();
         box.add(20);
         box.add(21);
         box.add(33);
