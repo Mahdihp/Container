@@ -2,24 +2,29 @@ package com.maktab.inner_class;
 
 public class Main {
 
+    public static void main(String[] args) {
+        Main.staticMehtod();
+        new Main().noneStaticMethod();
+    }
+
     public void noneStaticMethod() {
-        new Inner();
+        new Inner("Inner Class From none Static Method");
     }
 
     public static void staticMehtod() {
         Main m = new Main();
-        m.new Inner();
+        m.new Inner("Inner Class From  Static Method");
     }
 
     class Inner {
-        public void f() {
-            System.out.println("Inner Class Method.");
+        public Inner(String message) {
+            System.out.println(message);
         }
     }
 
     static class InnerStatic {
-        public void f() {
-            System.out.println("Inner Class Method.");
+        public InnerStatic(String message) {
+            System.out.println(message);
         }
 
     }
