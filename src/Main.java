@@ -5,6 +5,6 @@ public class Main {
         box.add(20);
         box.add(21);
         box.add(33);
-        System.out.println(box.contains(21));
+        System.out.println(box.search(21));
     }
 }

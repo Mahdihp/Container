@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Box<T extends Number> {
+public class Box<T> {
 
-    private List<T> element = new ArrayList<T>();
+    private List<T> element = new ArrayList<>();
 
     public Box() {
 
@@ -25,7 +25,7 @@ public class Box<T extends Number> {
         this.element = element;
     }
 
-    public int contains(T f) {
+    public int search(T f) {
         for (int i = 0; i < element.size(); i++) {
             if (element.get(i).equals(f))
                 return i;
