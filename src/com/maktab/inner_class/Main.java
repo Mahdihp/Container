@@ -3,8 +3,9 @@ package com.maktab.inner_class;
 public class Main {
 
     public static void main(String[] args) {
-        Main.staticMehtod();
-        new Main().noneStaticMethod();
+//        Main.staticMehtod();
+//        new Main().noneStaticMethod();
+        new InnerStatic("Inner Class Static...");
     }
 
     public void noneStaticMethod() {
