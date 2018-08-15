@@ -9,6 +9,12 @@ public class Box<T extends Number> {
 
     }
 
+    public void add(T t){
+        element.add(t);
+    }
+    public T get(Integer t){
+        return element.get(t);
+    }
     public List<T> getElement() {
         return element;
     }
